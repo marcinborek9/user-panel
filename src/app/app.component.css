@@ -1,0 +1,25 @@
+.left-col-login {
+  background-color: rgb(7, 127, 226);
+  height:100vh;
+}
+
+.left-col-login > h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.left-col-login > p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.right-col-login {
+  background-color: rgb(218, 218, 253);
+  height:100vh;
+}
+
+.right-col-login > .login-form {
+  margin: 45% auto;
+  width: 60%;
+}
