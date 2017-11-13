@@ -1,0 +1,12 @@
+.wrapper {
+  height: 100vh;
+  background-color: rgb(231, 231, 243);
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.glyphicon {
+  margin: 0 5px;
+}
