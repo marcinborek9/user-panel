@@ -6,9 +6,19 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./profile.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
+interface Provider {
+  name: string;
+  surname: string;
+  address: string;
+  email: string;
+  page: string;
+  birthday: string;
+}
+
 export class ProfileComponent implements OnInit {
 
-  personalInfo: object = {
+  public personalInfo: object = {
     name: 'Marcin',
     surname: 'Borek',
     address: 'Gdańsk, Poland',
