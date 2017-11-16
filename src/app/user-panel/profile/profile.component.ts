@@ -1,12 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-@Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css'],
-  encapsulation: ViewEncapsulation.None
-})
-
 interface Provider {
   name: string;
   surname: string;
@@ -15,6 +8,15 @@ interface Provider {
   page: string;
   birthday: string;
 }
+
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css'],
+  encapsulation: ViewEncapsulation.None
+})
+
+
 
 export class ProfileComponent implements OnInit {
 
