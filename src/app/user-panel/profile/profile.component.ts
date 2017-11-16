@@ -15,9 +15,6 @@ interface Provider {
   styleUrls: ['./profile.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-
-
-
 export class ProfileComponent implements OnInit {
 
   public personalInfo: object = {
