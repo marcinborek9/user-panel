@@ -8,28 +8,34 @@
             <span class="icon-bar"></span>
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand" href="#">User Panel</a>
+          <a class="navbar-brand" href="" routerLink="panelinfo">User Panel</a>
         </div>
     
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav">
-                <li><a href="profile">
+                <li><a href="profile" routerLink="profile">
                   <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                   Profile
                 </a></li>
-                <li><a href="about">
+                <li><a href="about" routerLink="about">
                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                   About
                 </a></li>
-                <li><a href="files">
+                <li><a href="files" routerLink="files">
                   <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
                   Files
                 </a></li>
-                <li><a href="contact">
+                <li><a href="contact" routerLink="contact">
                   <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                   Contact
                 </a></li>
               </ul>
+              <ul class="nav navbar-nav pull-right">
+                  <li><a  href="contact" (click)="onLogout()" routerLink=''>
+                      <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                    Logout
+                  </a></li>
+             </ul>
         </div>
       </div>
     </nav>
@@ -37,7 +43,9 @@
 
   <div class="about">
     <div class="col-xs-12 about-info">
+      <div class="user-card">
       <router-outlet></router-outlet>
+    </div>
     </div>
   </div>
 </div>

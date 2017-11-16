@@ -1,0 +1,35 @@
+.left-col-login {
+  background-color: rgb(7, 127, 226);
+  height:100vh;
+}
+
+.left-col-login > h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.left-col-login > p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.right-col-login {
+  background-color: rgb(218, 218, 253);
+  height:100vh;
+}
+
+.right-col-login > .login-form {
+  margin: 40% auto;
+  width: 60%;
+}
+
+.login-card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0   rgba(0,0,0,.12);
+  border-radius: 2px;
+}
+/* <!-- PANEL LOGOWANIA ZAKONCZONY --> */
+
+

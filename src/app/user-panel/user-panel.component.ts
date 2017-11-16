@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-user-panel',
@@ -8,9 +10,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class UserPanelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onLogout() {
+    this.authService.logout();
+    this.router.navigate(['']);
   }
 
 }
