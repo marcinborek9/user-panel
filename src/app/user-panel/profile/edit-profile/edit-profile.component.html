@@ -1,3 +1,11 @@
-<p>
-  edit-profile works!
-</p>
+<form #user="ngForm" [formGroup]="userForm">
+    <label for="male">Name
+  <input required type="text" placeholder="name" [formControl]="name" />
+</label>
+<label for="male">Surname
+  <input required type="text" placeholder="surname" [formControl]="surname" />
+</label>
+  <label for="male">E-mail
+  <input required type="text" placeholder="E-mail" [formControl]="email" />
+</label>
+</form>

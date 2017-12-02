@@ -12,6 +12,8 @@ import { AuthService } from '../auth/auth.service';
 export class LoginComponent implements OnInit {
   showVar = false;
   showVar1 = true;
+  showMessage = true;
+  message = 'If u dont have an accout yet. Click here!';
   name = 'Go to registration!';
   constructor(private authService: AuthService) { }
 
@@ -21,11 +23,18 @@ export class LoginComponent implements OnInit {
     toggleChild() {
     this.showVar = !this.showVar;
     this.showVar1 = !this.showVar1;
+    this.showMessage = !this.showMessage;
 
     if (this.showVar) {
       this.name = 'Go to login!';
     } else {
       this.name = 'Go to registration!';
+    }
+
+    if (this.showMessage) {
+      this.message = 'If u dont have an accout yet. Click here!';
+    } else {
+      this.message = 'Already have an account? Sign in';
     }
      }
 

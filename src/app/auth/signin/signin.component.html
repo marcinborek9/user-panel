@@ -4,11 +4,11 @@
         <form (ngSubmit)="onSignin(f)" #f="ngForm">
             <div class="form-group">
               <label for="email">Mail</label>
-              <input type="email" id="email" name="email" ngModel class="form-control">
+              <input type="email" id="email" name="email" ngModel class="form-control" value="test@test.pl" [ngModel]="selectedUser.email">
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" ngModel class="form-control">
+              <input type="password" id="password" name="password" ngModel class="form-control" [ngModel]="selectedUser.password">
             </div>
             <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Login</button>
           </form>

@@ -1,0 +1,14 @@
+.header-element {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.btn-edit {
+  margin-bottom: 10px;
+}
+
+.post-wrapper {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}

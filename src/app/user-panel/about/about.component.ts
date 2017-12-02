@@ -7,10 +7,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AboutComponent implements OnInit {
-
+  public showPost = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addPost() {
+    this.showPost = true;
   }
 
 }

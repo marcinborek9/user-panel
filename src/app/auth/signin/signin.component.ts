@@ -11,6 +11,10 @@ import { AuthService } from '../auth.service';
 })
 export class SigninComponent implements OnInit {
   @Input() showMePartially1: boolean;
+  public selectedUser = {
+    email: 'test@test.pl',
+    password: 'test123'
+  };
   constructor(private authService: AuthService) { }
 
   ngOnInit() {

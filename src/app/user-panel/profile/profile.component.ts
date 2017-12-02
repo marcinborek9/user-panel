@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Provider {
   name: string;
@@ -16,7 +17,6 @@ interface Provider {
   encapsulation: ViewEncapsulation.None
 })
 export class ProfileComponent implements OnInit {
-
   public personalInfo: object = {
     name: 'Marcin',
     surname: 'Borek',
@@ -25,10 +25,12 @@ export class ProfileComponent implements OnInit {
     page: 'www.github.com/marcinborek9',
     birthday: '21 may 1993'
   };
-
-  constructor() { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
   }
 
+  edit() {
+    this.router.navigate(['/userpanel/profile/edit']);
+  }
 }
