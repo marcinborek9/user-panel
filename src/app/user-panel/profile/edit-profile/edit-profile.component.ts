@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-edit-profile',
   templateUrl: './edit-profile.component.html',
-  styleUrls: ['./edit-profile.component.css'],
+  styleUrls: ['./edit-profile.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class EditProfileComponent implements OnInit {

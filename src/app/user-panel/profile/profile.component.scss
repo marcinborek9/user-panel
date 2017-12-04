@@ -1,0 +1,36 @@
+.header-element {
+  display: inline-block;
+  margin-right: 20px;
+  .btn-edit {
+    margin-bottom: 10px;
+  }
+}
+
+.profile-container {
+  width: 50%;
+  .profile-picture {
+    max-width: 400px;
+    max-height: 200px
+  }
+  .profile {
+    margin: 2% 0;
+  }
+  .profile-details {
+    display: block;
+    margin-top: 5px;
+  }
+  .glyphicon {
+    margin: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .profile-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .profile {
+        width: 90vw;
+      }
+    }
+  }

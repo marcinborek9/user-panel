@@ -1,12 +1,31 @@
 <div class="container-fluid">
-  <div class="row col-xs-3">
-  <h2 class="header-element">About</h2>
-  <button class="btn btn-primary btn-edit header-element" (click)="addPost()">Add post</button>
-  </div>
-  
-  <div class="row col-xs-10">
-    <p>dsadasd</p>
+  <div class="row col-xs-12">
+  <h2>About - blog post</h2>
+  <p>You can post about everything in this section.</p>
+</div>
+
+<div class="row col-xs-12">
+  <form #postForm="ngForm">
+    <div class="form-group">
+      <label for="header" class="post-header">Header</label>
+      <input [maxLength]="inputLength" class="post-content" [(ngModel)]="newPost.header" name="header">
+    </div>
+
+    <div class="form-group">
+      <label for="content" class="post-header">Content</label>
+      <textarea [maxLength]="textareaLength" class="post-content" rows="4" [(ngModel)]="newPost.content" name="content"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-edit" (click)="addPost()">Add post</button>
+
+  </form>
   </div>
 </div>
 
-  
+<div class="container-fluid" [class.post-wrapper]="showPost">
+  <div *ngFor="let post of postArray">
+    <h3>{{post['header']}}</h3>
+    <p>{{post['content']}}</p>
+    <button class="btn btn-danger btn-delete" (click)="deletePost(post)">X</button>
+  </div>
+</div>

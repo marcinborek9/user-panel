@@ -13,7 +13,7 @@ interface Provider {
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css'],
+  styleUrls: ['./profile.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class ProfileComponent implements OnInit {
