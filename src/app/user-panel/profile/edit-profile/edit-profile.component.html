@@ -1,11 +1,28 @@
-<form #user="ngForm" [formGroup]="userForm">
-    <label for="male">Name
-  <input required type="text" placeholder="name" [formControl]="name" />
-</label>
-<label for="male">Surname
-  <input required type="text" placeholder="surname" [formControl]="surname" />
-</label>
-  <label for="male">E-mail
-  <input required type="text" placeholder="E-mail" [formControl]="email" />
-</label>
-</form>
+<div class="container-fluid">
+  <form #user="ngForm" [formGroup]="userForm">
+    <div class="form-group">
+      <label class="input-details" for="male">Name
+        <input class="input-details" required type="text" placeholder="name" [formControl]="name" />
+      </label>
+      <label class="input-details" for="male">Surname
+        <input class="input-details" required type="text" placeholder="surname" [formControl]="surname" />
+      </label>
+      <label class="input-details" for="male">Address
+        <input class="input-details" required type="text" placeholder="address" [formControl]="address" />
+      </label>
+      <label class="input-details" for="male">E-mail
+        <input class="input-details" required type="text" placeholder="E-mail" [formControl]="email" />
+      </label>
+      <label class="input-details" for="male">Website
+        <input class="input-details" required type="text" placeholder="Website" [formControl]="page" />
+      </label>
+      <label class="input-details" for="male">Birthday
+        <input class="input-details" required type="text" placeholder="birthday" [formControl]="birthday" />
+      </label>
+    </div>
+
+    <button class="btn btn-primary btn-save" (click)="saveProfile()">Save</button>
+    <button class="btn btn-danger btn-save" (click)="backToProfile()">Back</button>
+
+  </form>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-panel-info',
@@ -6,11 +6,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./panel-info.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class PanelInfoComponent implements OnInit {
+export class PanelInfoComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

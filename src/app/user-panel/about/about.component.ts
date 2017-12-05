@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 
 import { Post } from './post';
 
@@ -9,6 +9,7 @@ import { Post } from './post';
   encapsulation: ViewEncapsulation.None
 })
 export class AboutComponent {
+
   public textareaLength = 300;
   public inputLength = 60;
   public showPost = false;
@@ -19,7 +20,6 @@ export class AboutComponent {
     const postObj = {header: this.newPost.header, content: this.newPost.content};
     this.postArray.push(postObj);
     this.showPost = true;
-    console.log(this.postArray);
   }
 
   deletePost(post: string) {

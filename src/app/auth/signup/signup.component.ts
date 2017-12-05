@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { AuthService } from '../auth.service';
@@ -9,13 +9,10 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./signup.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class SignupComponent implements OnInit {
+export class SignupComponent {
   @Input() showMePartially: boolean;
 
     constructor(private authService: AuthService) { }
-
-    ngOnInit() {
-    }
 
     onSignup(form: NgForm) {
       const email = form.value.email;

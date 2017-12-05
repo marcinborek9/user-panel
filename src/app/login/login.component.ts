@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { AuthService } from '../auth/auth.service';
@@ -9,16 +9,13 @@ import { AuthService } from '../auth/auth.service';
   styleUrls: ['./login.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   showVar = false;
   showVar1 = true;
   showMessage = true;
   message = 'If u dont have an accout yet. Click here!';
   name = 'Go to registration!';
   constructor(private authService: AuthService) { }
-
-    ngOnInit() {
-    }
 
     toggleChild() {
     this.showVar = !this.showVar;
