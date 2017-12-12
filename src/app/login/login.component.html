@@ -1,21 +1,16 @@
-<div class="wrapper">
+<div class="wrapper container-fluid">
   <div class="row">
     <div class="col-xs-6 left-col-login">
       <h2>This is your first login panel!</h2>
       <p>Just come in and check, what it is about!</p>
     </div>
     <div class="col-xs-6 right-col-login">
-      
       <div class="login-form">
-        <!-- <div class="login-card"> -->
         <app-signin [showMePartially1]="showVar1"></app-signin>
         <app-signup [showMePartially]="showVar"></app-signup>
-      <!-- </div> -->
       <p>{{ message }}</p>
       <button class="btn btn-primary btn-block" type="submit" (click)="toggleChild()">{{ name }}</button>
       </div>
     </div>
   </div>
 </div>
-<!-- TUTAJ BĘDZIE TYLKO PANEL LOGOWANIA, PO KTÓRYM PRZEKIERUJE DO PANELU UŻYTKOWNIKA! -->
-<!-- PANEL LOGOWANIA ZAKONCZONY-->
